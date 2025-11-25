@@ -1,8 +1,10 @@
 <script setup>
     import { RouterLink } from 'vue-router';
     import jobListing from './jobListing.vue';
-    import jobData from '../jobs.json';
-    import { ref, defineProps } from 'vue';
+    // import jobData from '../jobs.json';
+    import { ref, defineProps, onMounted } from 'vue';
+
+    import axios from 'axios';
 
 defineProps({
     limit: Number,
@@ -11,9 +13,23 @@ defineProps({
         default: false
     }
 })
-// If `jobs.json` exports an object like { jobs: [...] }, use that array.
-const jobs = ref(jobData && jobData.jobs ? jobData.jobs : jobData);
-console.log('jobs (array):', jobs.value);
+// For this for fix data static with file jobs.json file in project
+// const jobs = ref(jobData && jobData.jobs ? jobData.jobs : jobData);
+// console.log('jobs (array):', jobs.value);
+
+// This data form API of axios from HTTP
+const jobs = ref([]);
+
+onMounted(async () =>{
+    try {
+        const response = await axios.get('http://localhost:8000/jobs');
+        jobs.value = response.data
+    } catch (error) {
+        console.error("Error fetching jobs", error.message);
+        
+    }
+})
+
 
 </script>
 
