@@ -40,3 +40,25 @@ the route Hook
 1, import jobs form '../../..'
 2, const jobs = ref(jobData && jobData.jobs ? jobData.jobs : jobData);
 3, console.log('jobs (array):', jobs.value); --> log data optional
+
+-reactive is if you were to use a single object that has each
+field inside of it so an object with name, email
+
+-Proxying we have two requests
++ we have one in the (JobView) making it to the single job 
++ we have on in (JobListings) to jobs
+
+Cuz in (JobView) and (JobListings) is have HTTP when deploy 
+  wirting 5-10m we need to a Proxy 
+  -we add Proxy in file vite.config.js
+
+------------- How to usage this Project -------------
+
+-- Run Server in localhost port: 3000
+1, npm run server (Running server)
+
+-- Axios feteching API just using HTTP client 
+1, npm i axois
+
+-- Setup spinner loading extension
+1, npm i vue-spinner
