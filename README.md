@@ -2,7 +2,9 @@
 ## Usage
 This project uses JOSN-Server for a mock backend.
 
+## Read More
 - You can read this document.txt learn more for install package..
+- For project when deploy for api/jobs.json is working cuz is not deploy yet.
 
 # Install Dependencies
 ```bash
