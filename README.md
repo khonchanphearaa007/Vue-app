@@ -2,6 +2,8 @@
 ## Usage
 This project uses JOSN-Server for a mock backend.
 
+- You can read this document.txt learn more for install package..
+
 # Install Dependencies
 ```bash
 npm install
@@ -27,7 +29,7 @@ npm run dev
 npm run build
 ```
 
-##Preview Production Build
+## Preview Production Build
 ```bash
 npm run preview
 ```
