@@ -62,3 +62,12 @@ Cuz in (JobView) and (JobListings) is have HTTP when deploy
 
 -- Setup spinner loading extension
 1, npm i vue-spinner
+
+-- Install package call view toastify message Error & Success
+1, npm i vue-toastification@next
+
+-- Deploy with build project Production
+1, npm run build
+
+-- Deployment and preview project Production
+1, npm run preview

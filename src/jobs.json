@@ -83,6 +83,34 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "title": "Developer C#",
+      "type": "Part-Time",
+      "location": "Phnom Penh",
+      "description": "Developer Service",
+      "salary": "$90K - $100K",
+      "company": {
+        "name": "IDE",
+        "description": "IDE Service",
+        "contactEmail": "IDE@gmail.com",
+        "contactPhone": "01297364"
+      },
+      "id": "a24a"
+    },
+    {
+      "id": "51f0",
+      "title": "eps-32",
+      "type": "Full-Time",
+      "location": "Phnom Penh",
+      "description": "ESP32 Dev",
+      "salary": "$100K - $125K",
+      "company": {
+        "name": "eps32",
+        "description": "esp32 job",
+        "contactEmail": "esp32@gmail.com",
+        "contactPhone": "0110927799"
+      }
     }
   ]
 }
